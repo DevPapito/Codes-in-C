@@ -1,0 +1,85 @@
+#include <stdio.h>
+#include <string.h>
+
+void determina_tipo_triangulo_e_forma_triangulo(int pont00, int pont01, int pont02, int *formTria, int *type);
+
+int     main(void)
+{
+
+    int pont00;
+    int pont01;
+    int pont02;
+    int formaTriangulo;
+
+    int tipoTriangulo;
+
+    pont00 = 1;
+    pont01 = 1;
+    pont02 =1;
+
+    determina_tipo_triangulo_e_forma_triangulo(pont00, pont01, pont02, &formaTriangulo, &tipoTriangulo);
+
+    if (formaTriangulo == 1) {
+
+        printf("Não forma um triangulo");
+        return 1;
+
+    }
+
+    char type[150];
+    switch (tipoTriangulo)
+    {
+
+        case 0:
+            strncpy(type, "equilateres",sizeof(type));
+            break;
+
+        case 1:
+            strncpy(type, "isoceles",sizeof(type));
+            break;
+
+        case 2:
+            strncpy(type, "escaleno",sizeof(type));
+            break;
+
+    }
+
+    printf("Quadrado: %s", type);
+
+
+    return 0;
+
+}
+
+void determina_tipo_triangulo_e_forma_triangulo(int pont00, int pont01, int pont02, int *formTria, int *typeTria)
+{
+
+    if (pont00 <= 0 || pont01 <= 0 || pont02 <= 0) {
+
+        *formTria = 1;
+
+        return ;
+
+    }
+
+    if (pont00 == pont01 && pont01 == pont02)
+    {
+
+        *typeTria = 0;
+
+
+    }else if (pont00 == pont01 || pont01 == pont02)
+    {
+
+        *typeTria = 1;
+
+    }else
+    {
+
+        *typeTria = 2;
+
+    }
+
+    *formTria = 0;
+
+}
