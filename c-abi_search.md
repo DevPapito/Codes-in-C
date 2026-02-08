@@ -28,11 +28,11 @@ Esta tabela resume como cada modelo distribui os bits entre os tipos fundamentai
     * Resumo: Justificativa técnica para a adoção do LP64 em sistemas UNIX.
 * The C11 Memory Model: Formalization (ACM)
     * Resumo: Formalização matemática do comportamento da memória no padrão C11.
-* C ABI and Data Model Evolution
+* 6. [C ABI and Data Model Evolution] 
     * Resumo: Documentação técnica detalhando a especificação exata de cada modelo de bits.
-* Repositório de Teses USP (Busca ABI)
+* 7. [Repositório de Teses USP (Busca ABI)](https://teses.usp.br/)
     * Resumo: Pesquisas brasileiras sobre o impacto de arquiteturas de 64 bits em desempenho.
-* History and Future of Effective C
+* 8. [History and Future of Effective C](https://www.nccgroup.com/research-blog/past-present-and-future-of-effective-c/)
     * Resumo: Evolução do C como interface direta com o hardware desde 1990.
 * 9. [Abstract Machines and Memory Models (Cambridge/MIT)](https://www.cl.cam.ac.uk/~pes20/cerberus/)
     * Resumo: Investigação sobre a semântica real do C em comparação com a teoria das ABIs.
